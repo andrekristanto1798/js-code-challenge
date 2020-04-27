@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sign Up</title>
+    <title>Login</title>
 
     <!-- You may add more stuff here -->
     <script src="script.js"></script>
@@ -10,27 +10,20 @@
 
   <body>
     <!-- You may wrap the form in your own elements if necessary. -->
-    <div class="signup-form-container">
-      <form class="signup-form" onsubmit="return validateSignUp(event)">
-        <h2 class="form-title">Sign Up</h2>
-        <span class="form-subtitle">It's free and always will be</span>
+    <div class="login-form-container">
+      <form class="login-form" onsubmit="return validateLogin(event)">
+        <h2 class="form-title">Login</h2>
         <label for="input-email">Your Email</label>
         <input name="email" id="input-email" placeholder="john.vaskh@google.com" />
-
-        <label for="input-name">Your name</label>
-        <input name="name" id="input-name" placeholder="John Vaskh" />
-
-        <label for="input-phone">Your phone number</label>
-        <input name="phone-number" id="input-phone" placeholder="Phone Number (e.x. 96142786)" />
 
         <label for="input-password">Your password</label>
         <input name="password" type="password" id="input-password" placeholder="*********" />
 
         <div id="error-messages"></div>
 
-        <button>Sign Up</button>
+        <button>Login</button>
 
-        <span class="form-subtitle text-center">Already have an account? <a href="./login.html"> Login</a></span>
+        <span class="form-subtitle text-center">Don't have an account? <a href="./"> Register</a></span>
       </form>
     </div>
   </body>
